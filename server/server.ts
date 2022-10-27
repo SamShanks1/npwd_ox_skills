@@ -15,7 +15,7 @@ const config: DeepPartial<ResourceConfig> = JSON.parse(
   LoadResourceFile(GetCurrentResourceName(), 'config.json'),
 );
 
-Utils.onNetPromise<string, number>('nrp-skills:server:getSkillLevel', async (req, res) => {
+Utils.onNetPromise<string, number>('npwd_ox_skills:server:getSkillLevel', async (req, res) => {
   const level = getSkillLevel(req.source, req.data)
   if (!level) {
     return res ({
@@ -30,7 +30,7 @@ Utils.onNetPromise<string, number>('nrp-skills:server:getSkillLevel', async (req
   res(resData)
 })
 
-Utils.onNetPromise<undefined, ISkill[]>('nrp-skills:server:getSkills', async (req, res) => {
+Utils.onNetPromise<undefined, ISkill[]>('npwd_ox_skills:server:getSkills', async (req, res) => {
   const OxPlayer = GetPlayer(req.source)
   let skillList: ISkill[] = []
   config.skills.forEach(skill => {

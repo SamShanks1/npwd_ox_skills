@@ -12,7 +12,7 @@ export const skillState = {
       key: 'defaultSkillsList',
       get: async () => {
         try {
-          const resp = await fetchNui<ServerPromiseResp<ISkill[]>>('nrp-skills:client:getSkills');
+          const resp = await fetchNui<ServerPromiseResp<ISkill[]>>('npwd_ox_skills:client:getSkills');
           if (!resp.data) {
             console.log('no response data');
             return [];
