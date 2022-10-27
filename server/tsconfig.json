@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "types": ["@citizenfx/server"],
+    "target": "ES2015",
+    "moduleResolution": "node",
+  }
+}

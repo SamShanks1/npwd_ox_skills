@@ -1,0 +1,16 @@
+{
+  "skills": [
+    {
+      "name": "lockpicking",
+      "description": "Slows down fishing skill check",
+      "levels": [0, 100, 200, 300, 400, 500]
+    },
+    {
+        "name": "stamina",
+        "description": "Increases Stamina",
+        "levels": [0, 100, 200, 400, 800, 1600, 3200]
+    }
+  ]
+}
+
+
